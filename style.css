@@ -1,22 +1,30 @@
+/* Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+    background: url("https://via.placeholder.com/1600x900") center/cover no-repeat;
+    display: flex;
+    align-items: center;
 }
 
-/* Smooth scroll */
+/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
 
-/* Section headings */
+/* Section Titles */
 h2 {
-    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* Cards */
 .card {
-    border-radius: 10px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* Footer */
