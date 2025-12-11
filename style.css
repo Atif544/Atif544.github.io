@@ -1,0 +1,25 @@
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section headings */
+h2 {
+    font-weight: 700;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+}
