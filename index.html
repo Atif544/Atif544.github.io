@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow fs-5">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MD.Atif Rahman Rudro</a>
+            <a class="navbar-brand fw-bold" href="#">Md. Atif Rahman Rudro</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,7 +46,7 @@
             <div class="row align-items-center">
 
                 <div class="col-md-5 text-center mb-4 mb-md-0">
-                    <img src="image1.jpg" alt="Profile Photo" class="rounded-circle shadow"
+                    <img src="image1.png" alt="Profile Photo" class="rounded-circle shadow"
                         style="width:280px; height:280px; max-width:100%; object-fit:cover; border:4px solid #fff;">
                 </div>
 
@@ -75,38 +75,127 @@
         </div>
     </header>
 
-    <section id="about" class="py-5">
-        <div class="container" data-aos="fade-right">
-            <h2 class="text-center fw-bold mb-4">About Me</h2>
+    <section id="about" class="timeline-section">
 
-            <p class="text-center w-75 mx-auto mb-5">
-                I am an IT student passionate about creating responsive websites using HTML, CSS, Bootstrap, JavaScript,
-                and modern web technologies. I enjoy learning new tools, improving my programming skills in C, C++, and
-                Java,and building clean, efficient digital experiences. I aim to combine creativity and technology to
-                deliver
-                user-friendly and visually appealing solutions.
-            </p>
+    <h2>About Me & Education</h2>
 
-            <div class="education text-center">
-                <h3 class="fw-bold mb-3" style="color: #d6336c;">Education</h3>
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <strong>B.Sc. (Engg.) in Information and Communication Technology</strong> - Mawlana Bhashani
-                        Science & Technology
-                        University (MBSTU)
-                    </li>
-                    <li class="mb-2">
-                        <strong>HSC (Higher Secondary)</strong> - Birshrestha Noor Mohammad Public College , Dhaka ,
-                        GPA: 5.0/5.0
-                    </li>
-                    <li class="mb-2">
-                        <strong>SSC (Secondary School)</strong> - Birshrestha Noor Mohammad Public School , Dhaka , GPA:
-                        5.0/5.0
-                    </li>
-                </ul>
+    <div class="timeline">
+
+        <!-- ABOUT ME -->
+        <div class="timeline-item"  data-aos="fade-right">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>About Me</h3>
+
+                <p>
+                    I am an IT student passionate about creating responsive websites using HTML, CSS, Bootstrap,
+                    JavaScript and modern web technologies. I enjoy learning new tools and improving my programming skills.
+                </p>
+
+                <span>ICT Student</span>
             </div>
         </div>
-    </section>
+
+        <!-- EDUCATION -->
+        <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>B.Sc.(Engg.) in Infromation and Communication Technology</h3>
+                <h4>Mawlana Bhashani Science & Technology University</h4>
+                <span>2023 - Present</span>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>HSC</h3>
+                <h4>Birshrestha Noor Mohammad Public College</h4>
+                <span>GPA: 5.00 / 5.00</span>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+<style>
+.timeline-section {
+    padding: 50px;
+    font-family: Arial;
+}
+
+.timeline-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* vertical line */
+.timeline {
+    position: relative;
+    margin-left: 30px;
+    border-left: 4px solid #00c6ff;
+}
+
+/* each block */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* dot */
+.timeline-dot {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: #00c6ff;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* content box */
+.timeline-content {
+    margin-left: 30px;
+    background: linear-gradient(135deg, #00a8e8, #0077b6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    transform: scale(1.02);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.timeline-content h4 {
+    margin: 8px 0;
+    font-weight: normal;
+}
+
+.timeline-content p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.timeline-content span {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+</style>
 
     <section id="projects" class="py-5 bg-light">
         <div class="container">
@@ -153,15 +242,15 @@
 
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
                     <div class="card shadow-sm h-100">
-                        <img src="image4.png" class="card-img-top">
+                        <img src="image8.webp" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Quiz App</h5>
+                            <h5 class="card-title fw-bold">Cipher App</h5>
                             <p class="card-text">
-                                A responsive quiz application with timer, scoring system, and MySQL database.
-                                Built using JavaFX.
+                               The Cipher App is a simple tool for encrypting and decrypting messages using classical ciphers like Caesar, Vigenère, Hill, and Playfair.  
+It is designed for educational purposes to help understand basic cryptography in an interactive way.
                             </p>
 
-                            <a href="https://github.com/Atif544/Final_Project-" target="_blank"
+                            <a href="https://atif544.github.io/Playfair_Cipher-App/" target="_blank"
                                 class="btn btn-dark mt-auto">
                                 View Project
                             </a>
@@ -172,16 +261,18 @@
 
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
                     <div class="card shadow-sm h-100">
-                        <img src="image5.jpg" class="card-img-top">
+                        <img src="image5.png" class="card-img-top">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Student Management Project</h5>
+                            <h5 class="card-title fw-bold">Classroom Resource Sharing System</h5>
                             <p class="card-text">
-                                A simple student management system to manage student records, attendance, and
-                                performance.
-                                Built using Java and MySQL.
+                               <p>
+The Classroom Resource Sharing Project is a platform for students and teachers to share study materials easily.<br>
+It allows uploading and downloading of notes, assignments, and presentations in one place.
+This system improves collaboration and makes learning more organized and accessible.
+</p>
                             </p>
 
-                            <a href="https://github.com/Atif544/Student_Servlet" target="_blank"
+                            <a href="https://smartstudy-hub-project-10.onrender.com/" target="_blank"
                                 class="btn btn-dark mt-auto">
                                 View Project
                             </a>
@@ -426,9 +517,7 @@
                         <ul>
                             <li>BSc (Honours) in Information and Communication Technology (Ongoing)</li>
                             <li>Mawlana Bhashani Science and Technology University (MBSTU)</li>
-                            <li>CGPA: 3.72</li>
-                            <li>2nd position in 1st Year 1st Semester</li>
-                            <li>4th position in 1st Year 2nd Semester</li>
+                            <li>CGPA: 3.73</li>
                             <li>Strong performance in DBMS, Web Programming and Networking</li>
 
 
@@ -496,29 +585,58 @@
                     </div>
                 </div>
 
-                <div class="col-lg-7 p-5" data-aos="fade-left" style="background: #f8f9fa;">
-                    <h4 class="fw-bold mb-4 text-center">Send Me a Message</h4>
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <label class="form-label fw-bold">Your Name</label>
-                            <input type="text" class="form-control" placeholder="Enter your name">
-                        </div>
+                <div class="col-lg-7 p-5" data-aos="fade-left" style="background: #f8f9fa; border-radius: 10px;">
 
-                        <div class="mb-3">
-                            <label class="form-label fw-bold">Email Address</label>
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                        </div>
+    <h4 class="fw-bold mb-4 text-center">Send Me a Message</h4>
 
-                        <div class="mb-3">
-                            <label class="form-label fw-bold">Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Write your message"></textarea>
-                        </div>
+    <form id="contact-form">
 
-                        <button type="submit" class="btn btn-primary w-100 fw-bold">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+        <div class="mb-3">
+            <label class="form-label fw-bold">Your Name</label>
+            <input type="text" name="from_name" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Email Address</label>
+            <input type="email" name="from_email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Message</label>
+            <textarea name="message" rows="5" class="form-control" placeholder="Write your message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 fw-bold">
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+
+<!-- EMAILJS (REQUIRED) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init("6ud8sGlAwmkC3xTwL");
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_2rqa1td",
+            "template_hwekdxo",
+            this
+        ).then(() => {
+            alert("Message sent successfully!");
+            this.reset();
+        }).catch((error) => {
+            alert("Failed to send message!");
+            console.log(error);
+        });
+
+    });
+</script>
 
             </div>
         </div>
